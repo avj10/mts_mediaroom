@@ -1,0 +1,68 @@
+[
+  {
+    "table_name": "account",
+    "columns": [
+      "accountidsurrogate",
+      "accountid",
+      "accountexternalid",
+      "servicegroupid",
+      "createstamp",
+      "updatestamp",
+      "branchid",
+      "effectivedate",
+      "active",
+      "deleted",
+      "status"
+    ],
+    "partition": ""
+  },
+  {
+    "table_name": "device",
+    "columns": [
+      "deviceidsurrogate",
+      "deviceid",
+      "accountid",
+      "servicegroupid",
+      "deviceexternalid",
+      "status",
+      "branchid",
+      "effectivedate",
+      "active",
+      "deleted",
+      "updatestamp"
+    ],
+    "partition": ""
+  },
+  {
+    "table_name": "eventclientapplication",
+    "columns": [
+      "origintime",
+      "dayid",
+      "timeid",
+      "deviceid",
+      "applicationname",
+      "branchid",
+      "rowversion",
+      "loaddate"
+    ],
+    "partition": "dayid"
+  },
+  {
+    "table_name": "eventclientprogramwatched",
+    "columns": [
+      "origintime",
+      "dayid",
+      "timeid",
+      "deviceid",
+      "programid",
+      "duration",
+      "tuneid",
+      "branchid",
+      "programnativeid",
+      "rowversion",
+      "loaddate",
+      "watchmode"
+    ],
+    "partition": "dayid"
+  }
+]
